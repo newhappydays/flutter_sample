@@ -15,7 +15,8 @@ class RouteButton extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            minimumSize: const Size.fromHeight(50)),
+          minimumSize: const Size.fromHeight(50),
+        ),
         onPressed: () {
           Navigator.pushNamed(context, route.routeName);
         },

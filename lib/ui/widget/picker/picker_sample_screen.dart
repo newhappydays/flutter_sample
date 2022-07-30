@@ -135,6 +135,7 @@ class PickerSampleScreen extends StatelessWidget {
             ),
           );
         });
+
   }
 
   showSnackBar(BuildContext context, String message) {

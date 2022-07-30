@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_sample/ui/home_screen.dart';
 import 'package:flutter_sample/ui/package/bloc/bloc_screen.dart';
 import 'package:flutter_sample/ui/package/calendar/table_calendar_screen.dart';
@@ -16,7 +17,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
 void main() async {
-  await initializeDateFormatting();
+  // await initializeDateFormatting();
 
   await Hive.initFlutter();
   Hive.registerAdapter(HiveTodoAdapter());
@@ -31,8 +32,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate
+        ],
+        supportedLocales: [
+          Locale('ko', 'KR'),
+        ],
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

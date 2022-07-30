@@ -19,9 +19,13 @@ class DialogOpenButton extends StatelessWidget {
       ),
       width: double.infinity,
       child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          minimumSize: const Size.fromHeight(50),
+        ),
         onPressed: openDialog,
         child: Text(
           btnName,
+          style: const TextStyle(fontSize: 20),
         ),
       ),
     );
