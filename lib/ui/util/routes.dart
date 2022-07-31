@@ -13,7 +13,14 @@ class RouteName {
   static const hiveMain = "/hive_screen";
   static const blocMain = "/bloc_screen";
   static const providerMain = "/provider_screen";
+
+  // package - provider
+  static const providerSampleList = "/provider_sample_list";
+  static const providerCounterScreen = "/provider_counter_screen";
+  static const providerTodoScreen = "/provider_todo_screen";
   static const providerTodoEdit = "/provider_todo_edit_screen";
+
+  // package - bloc
 
   // static const sampleMain = "/";
 
@@ -47,6 +54,11 @@ final List<RouteInfo> packageRoutes = [
 final List<RouteInfo> widgetRoutes = [
   RouteInfo(routeTitle: 'Dialog', routeName: RouteName.dialogSampleMain),
   RouteInfo(routeTitle: 'Picker', routeName: RouteName.pickerSampleMain),
+];
+
+final List<RouteInfo> providerRoutes = [
+  RouteInfo(routeTitle: 'CounterApp', routeName: RouteName.providerCounterScreen),
+  RouteInfo(routeTitle: 'TodoApp', routeName: RouteName.providerTodoScreen)
 ];
 
 final List<RouteInfo> sampleRoutes = [];
