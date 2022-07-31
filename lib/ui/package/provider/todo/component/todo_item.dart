@@ -33,7 +33,7 @@ class ProviderTodoItem extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                '${todo.title} ${todo.id}',
+                '${todo.title}',
               ),
             ),
             Row(

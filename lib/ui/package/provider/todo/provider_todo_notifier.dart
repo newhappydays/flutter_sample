@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/ui/package/provider/todo/provider_todo.dart';
 
-class TodoNotifier with ChangeNotifier {
+class ProviderTodoNotifier with ChangeNotifier {
 
   final List<ProviderTodo> _list = [];
   List<ProviderTodo> get list => _list;

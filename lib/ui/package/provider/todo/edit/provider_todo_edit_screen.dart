@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sample/ui/package/provider/todo/edit/todo_edit_argument.dart';
 import 'package:provider/provider.dart';
 
-import '../todo_notifier.dart';
+import '../provider_todo_notifier.dart';
 
 class ProviderTodoEditScreen extends StatefulWidget {
   const ProviderTodoEditScreen({
@@ -24,7 +24,7 @@ class _ProviderTodoEditScreenState extends State<ProviderTodoEditScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final todoNotifier = context.read<TodoNotifier>();
+    final todoNotifier = context.read<ProviderTodoNotifier>();
 
     final args = ModalRoute.of(context)!.settings.arguments;
     final updateTargetTodo = args != null ? args as TodoEditArgument : null;
@@ -78,7 +78,6 @@ class _ProviderTodoEditScreenState extends State<ProviderTodoEditScreen> {
                   '저장',
                 ),
               ),
-              Text('title = $title')
             ],
           ),
         ),

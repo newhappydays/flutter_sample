@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/ui/package/provider/todo/edit/todo_edit_argument.dart';
-import 'package:flutter_sample/ui/package/provider/todo/todo_notifier.dart';
+import 'package:flutter_sample/ui/package/provider/todo/provider_todo_notifier.dart';
 import 'package:provider/provider.dart';
 
 import '../../../util/routes.dart';
@@ -16,13 +16,13 @@ class ProviderTodoScreen extends StatefulWidget {
 class _ProviderTodoScreenState extends State<ProviderTodoScreen> {
   @override
   Widget build(BuildContext context) {
-    final todoNotifier = context.watch<TodoNotifier>();
+    final todoNotifier = context.watch<ProviderTodoNotifier>();
     final todoList = todoNotifier.list;
 
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Provider Sample Page',
+          'Provider Todo',
         ),
       ),
       body: todoList.isNotEmpty
