@@ -13,6 +13,7 @@ class RouteName {
   static const hiveMain = "/hive_screen";
   static const blocMain = "/bloc_screen";
   static const providerMain = "/provider_screen";
+  static const dioMain = "/dio_screen";
 
   // package - provider
   static const providerSampleList = "/provider_sample_list";
@@ -49,6 +50,7 @@ final List<RouteInfo> packageRoutes = [
   RouteInfo(routeTitle: 'Hive', routeName: RouteName.hiveMain),
   RouteInfo(routeTitle: 'Bloc', routeName: RouteName.blocMain),
   RouteInfo(routeTitle: 'Provider', routeName: RouteName.providerMain),
+  RouteInfo(routeTitle: 'Dio', routeName: RouteName.dioMain),
 ];
 
 final List<RouteInfo> widgetRoutes = [

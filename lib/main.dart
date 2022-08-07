@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_sample/ui/home_screen.dart';
 import 'package:flutter_sample/ui/package/bloc/bloc_screen.dart';
 import 'package:flutter_sample/ui/package/calendar/table_calendar_screen.dart';
+import 'package:flutter_sample/ui/package/dio/dio_screen.dart';
 import 'package:flutter_sample/ui/package/drift/drift_screen.dart';
 import 'package:flutter_sample/ui/package/hive/hive_screen.dart';
 import 'package:flutter_sample/ui/package/hive/model/hive_todo.dart';
@@ -57,6 +58,7 @@ class MyApp extends StatelessWidget {
           RouteName.blocMain: (context) => BlocScreen(),
           RouteName.providerMain: (context) => ProviderScreen(),
           RouteName.providerTodoEdit: (context) => ProviderTodoEditScreen(),
+          RouteName.dioMain: (context) => DioScreen(),
 
           // widget
           RouteName.dialogSampleMain: (context) => DialogSampleScreen(),
